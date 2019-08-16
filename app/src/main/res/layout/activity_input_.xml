@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Input_Activity">
+
+    <TextView
+        android:id="@+id/tvDirect"
+        android:textSize="5mm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Input Info Below."
+        app:layout_constraintTop_toTopOf="parent"/>
+    <EditText
+        android:id="@+id/etFN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="First Name"
+        app:layout_constraintTop_toBottomOf="@id/tvDirect" />
+    <EditText
+        android:id="@+id/etLN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last Name"
+        app:layout_constraintTop_toBottomOf="@id/etFN"/>
+
+    <EditText
+        android:id="@+id/etSA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Street Address"
+        app:layout_constraintTop_toBottomOf="@+id/etLN"/>
+    <EditText
+        android:id="@+id/etCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="City"
+        app:layout_constraintTop_toBottomOf="@id/etSA"/>
+    <EditText
+        android:id="@+id/etSt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="State"
+        app:layout_constraintTop_toBottomOf="@id/etCity"/>
+    <EditText
+        android:id="@+id/etZip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zipcode"
+        app:layout_constraintTop_toBottomOf="@id/etSt"/>
+    <Button
+        android:id="@+id/btnInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="input_bundle"
+        android:text="Input"
+        app:layout_constraintTop_toBottomOf="@id/etZip" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
