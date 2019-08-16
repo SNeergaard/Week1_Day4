@@ -1,0 +1,1 @@
+# I make a activity with lables textview views and a button. When the button is pressed it moves into another activity with with edittexts and a button. when that button is pressed impliments all the strings and bundles them and replaces the textin the first activity.
